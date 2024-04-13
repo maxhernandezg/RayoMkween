@@ -69,11 +69,14 @@
 
 
   .mapa{
-    outline: 2px solid rgb(116, 239, 255);
+    outline: 3px solid rgb(88, 142, 150);
     margin-left: 1px ;
     width: 200px;
     height: 200px; 
-    
+  }
+  .iframe{
+    width: 100%;
+    height: 100%;
   }
 
   .texto1{
@@ -85,10 +88,7 @@
     
   }
 
-  .iframe{
-    width: 100%;
-    height: 100%;
-  }
+  
 
 
   .navbar-nav {
