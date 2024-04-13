@@ -49,3 +49,17 @@ body {
     .titulazo{
         color: white;
     }
+
+    .colormenu{
+        background-color: rgb(21, 2, 109);
+    }
+    
+    .texto-blanco{
+      color: white;
+    }
+
+    .btn.btn-primary.btn-lg {
+        background-color: rgb(21, 2, 109);
+        border-color: rgb(21, 2, 109);
+    }
+    
