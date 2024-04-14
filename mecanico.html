@@ -44,7 +44,7 @@
         </nav>
         <main class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12">
                     <h1>Mecanico</h1>
                     <h3>Foaquin Jerrada</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eum amet deleniti architecto.
@@ -58,22 +58,38 @@
                     <img src="https://www.emagister.com/i/wp-content/uploads/2022/05/mecanica.jpg" alt=""
                         class="rounded img-fluid">
                 </div>
-                <div class="col-6">
+                <div class="col-2">
                     <div>
                         <h4>Precio</h4>
                         <h2>$45.000</h2>
                         <h6>Incluye IVA</h6>
                         <br>
-                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="button"
-                            autocomplete="off">Agendar</button>
-                        <br>
-                        <button type="button" class="btn btn-outline-primary btn-lg">Contactar</button>
+                        <div class="d-flex mb-3">
+                            <button class="btn btn-primary mb-3 flex-fill">Contactar</button>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <button class="btn btn-outline-primary mb-3 flex-fill">Agendar</button>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="col-2 offset-2">
+                    <div class="container-card">
+                        <div class="card border-light" style="color: rgb(21, 2, 109);">
+                            <img class="card-img-top" src="https://fotografias.antena3.com/clipping/cmsimages02/2021/06/23/A04EF7C6-2698-4A1E-A006-DC4E594E1A16/57.jpg?crop=1745,1009,x175,y0&width=1280&height=740&optimize=low&format=webply" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">María</h5>
+                                <p class="card-text">Muy conforme con el trabajo entregado</p>
+                                <a href="#" class="btn btn-primary">Leer más..</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
 
 
-            <div>
+            <div class="container pb-5">
                 <h2 class="text-center py-5">¿Cómo funciona el servicio de mecánico a domicilio?</h2>
                 <p>En nuestro servicio de mecánico a domicilio, nuestro técnico especialista utilizará un scanner para
                     diagnosticar el estado en que se encuentra tu auto. De esta manera, podrá detectar rápidamente la
@@ -81,18 +97,21 @@
                     maneras:</p>
                 <ol>
                     <li>
-                        <strong>Reparación Inmediata: </strong>Si es un problema menor, que puede resolverse en menos de 60 minutos, lo
+                        <strong>Reparación Inmediata: </strong>Si es un problema menor, que puede resolverse en menos de
+                        60 minutos, lo
                         solucionaremos en tu propio domicilio.
                     </li>
                     <br>
                     <li>
-                        <strong>Reparación con Repuestos: </strong>En caso de necesitar piezas de repuesto, te proporcionaremos un
+                        <strong>Reparación con Repuestos: </strong>En caso de necesitar piezas de repuesto, te
+                        proporcionaremos un
                         presupuesto detallado en un plazo de 48 horas. Si aceptas realizar el cambio de los repuestos,
                         te ofreceremos agendar nuevamente una cita para realizarlo.
                     </li>
                     <br>
                     <li>
-                        <strong>Diagnóstico en Taller: </strong>Si el problema requiere un diagnóstico más completo, es decir, que por
+                        <strong>Diagnóstico en Taller: </strong>Si el problema requiere un diagnóstico más completo, es
+                        decir, que por
                         algún motivo no se puede realizar con nuestro servicio de mecánico a domicilio, te ofreceremos
                         el servicio de diagnóstico de fallas. Incluyendo el servicio de retiro y entrega para trasladar
                         tu vehículo a un taller y evaluarlo de manera más precisa
@@ -104,33 +123,48 @@
                 </p>
             </div>
         </main>
-        <footer class="footer"> 
+        <br>
+        <footer class="footer">
             <div class="container">
-              <div class="row">
-                <div class="col">
-                  <h6 style="color: white;">Como llegar </h6>
-                  <br><div class="mapa" style="margin-left: -45px;">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.0567143436012!2d-71.61585541269383!3d-33.04451994439196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e0d76107fd55%3A0x77baf68d119f6eeb!2sDUOC%20UC%20Sede%20Valparaíso!5e0!3m2!1ses-419!2scl!4v1712878011647!5m2!1ses-419!2scl"
-                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe>
-                  </div>
+                <div class="row">
+                    <div class="col">
+                        <h6 style="color: white;">Como llegar </h6>
+                        <br>
+                        <div class="mapa" style="margin-left: -45px;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.0567143436012!2d-71.61585541269383!3d-33.04451994439196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e0d76107fd55%3A0x77baf68d119f6eeb!2sDUOC%20UC%20Sede%20Valparaíso!5e0!3m2!1ses-419!2scl!4v1712878011647!5m2!1ses-419!2scl"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe>
+                        </div>
+                    </div>
+                    <div class="col" style="color: white;">
+                        <h6>Políticas de Servicio</h6>
+                        <br>
+                        <p>Servicios</p>
+                        <p>Devoluciones</p>
+                        <p>Quiénes Somos</p>
+
+                    </div>
+                    <div class="col">
+                        <h6 style="color: white;">Nuestras Redes</h6>
+                        <br><br>
+                        <div style="width: 100%;"><img
+                                src="https://i.ibb.co/2NnVvQR/gratis-png-logotipo-de-instagram-logotipo-de-la-marca-de-iconos-de-computadora-logotipo-de-instagram.png"
+                                alt="" style="max-width: 20%; margin-left: -46px;">
+                            <img src="https://i.ibb.co/dQqSX0f/m2-H7-N4-N4b1-K9b1-Z5-removebg-preview.png" alt=""
+                                style="max-width: 12%; margin-right: 10px;"></img>
+                            <img src="https://i.ibb.co/HX5LLF5/9a9f15138998651cc789a4654ccce6a4-removebg-preview.png"
+                                alt="" style="max-width: 12%; margin-left: 10px;">
+                        </div>
+                    </div>
                 </div>
-                <div class="col" style="color: white;">
-                  <h6 >Políticas de Servicio</h6>
-                    <br><p>Política de envíos</p>
-                    <p>Cambios y devoluciones</p>
-        
-                </div>
-                <div class="col">
-                  <h6 style="color: white;">Nuestras Redes</h6>
-                </div>
-              </div>
             </div>
-        
+
             <br>
-            <br><p style="color: white; text-align: center; margin-left: 50px; font-size: 10px;">Creado por: Joaquín Ferrada / Maximiliano Hernandez / Javier Silva ©</p>
-          </footer>
+            <br>
+            <p style="color: white; text-align: center; margin-left: 50px; font-size: 10px;">Creado por: Joaquín Ferrada
+                / Maximiliano Hernandez / Javier Silva ©</p>
+        </footer>
     </body>
 
 </html>

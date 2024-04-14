@@ -12,21 +12,18 @@
 
 /***** FOOTER *****/ 
 .footer {
-    background-color: rgb(21, 2, 109);
-    padding: 1em 0;
-    width: auto;
-    height: auto;
+  background-color: rgb(21, 2, 109);
+  padding: 1em 0;
+  width: auto;
+  height: auto;
 }
-
+.mapa{
+  outline: 3px solid rgb(88, 201, 216);
+  margin-left: 1px ;
+  width: 200px;
+  height: 200px; 
+}
 .iframe{
-    width: 100%;
-    height: 100%;
-  }
-
-  .mapa{
-    outline: 2px solid rgb(116, 239, 255);
-    margin-left: 1px ;
-    width: 200px;
-    height: 200px; 
-
-  }
+  width: 100%;
+  height: 100%;
+}
