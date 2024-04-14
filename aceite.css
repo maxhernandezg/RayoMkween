@@ -1,0 +1,47 @@
+/***** NAVBAR *****/  
+
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav .nav-link {
+  text-align: center;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  transition: background-color 0.3s ease;
+  z-index: 1000; /* Ajusta el z-index para que esté arriba del slide */
+}
+
+.colormenu{
+    background-color: rgb(21, 2, 109);
+
+}
+
+.texto-blanco{
+
+  color: white;
+}
+
+/***** FOOTER *****/ 
+.footer {
+  background-color: rgb(21, 2, 109);
+  padding: 1em 0;
+  width: auto;
+  height: auto;
+}
+.footer-text {
+  font-size: 14px; /* Tamaño de fuente para los párrafos */
+}
+.footer-small {
+  font-size: 10px; /* Tamaño de fuente para el texto pequeño */
+  text-align: center;
+  margin-left: 50px;
+}
+.social-link  {
+  margin-right: 30px; /* Separación entre los iconos */
+}
