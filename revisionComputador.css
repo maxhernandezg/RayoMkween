@@ -116,3 +116,25 @@ body{
 
   color: white;
 }
+
+.footer {
+    background-color: rgb(21, 2, 109);
+    padding: 1em 0;
+    width: auto;
+    height: auto;
+    color: white;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+.footer-small {
+  font-size: 10px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.social-link  {
+  margin-right: 30px;
+}
