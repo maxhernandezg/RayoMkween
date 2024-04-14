@@ -1,21 +1,59 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-.custom{
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #e6e6e6;
+}
+
+::selection {
+    background: #fee6eb;
+}
+
+/* Custom Classes */
+.custom {
     display: flex;
     justify-content: center;
-    padding-top: 10px ;   
-}
-.colormenu{
-    background-color: rgb(21, 2, 109);   
+    padding-top: 10px;
 }
 
-.texto-blanco{
-
-  color: white;
+.colormenu {
+    background-color: rgb(21, 2, 109);
 }
 
-/* FOOTER */
+.texto-blanco {
+    color: white;
+}
 
-  .footer {
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    text-align: center;
+}
+
+/* Footer */
+.footer {
     background-color: rgb(21, 2, 109);
     padding: 1em 0;
     width: auto;
@@ -24,77 +62,38 @@
 }
 
 .footer-text {
-  font-size: 14px; /* Tamaño de fuente para los párrafos */
+    font-size: 14px;
 }
+
 .footer-small {
-  font-size: 10px; /* Tamaño de fuente para el texto pequeño */
-  text-align: center;
-  margin-left: 50px;
-}
-
-
-
-.social-link  {
-  margin-right: 30px; /* Separación entre los iconos */
-}
-
-  .texto1{
-    margin: 4em ;
-    transform: translateY(-500%);
-    color: rgb(21, 2, 109); 
-  }
-  .navbar-nav {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navbar-nav .nav-link {
+    font-size: 10px;
     text-align: center;
-  }
-
-  .navbar {
-    position: sticky;
-    top: 0;
-    transition: background-color 0.3s ease;
-    z-index: 1000;
+    margin-left: 50px;
 }
-  .info{
+
+/* Info Section */
+.info {
     padding: 30px;
     width: 100%;
     height: auto;
     background-color: rgb(21, 2, 109);
-    margin:auto;
-    text-align: left; 
-  }
-  .card-container {
+    margin: auto;
+    text-align: left;
+}
+
+/* Card Styles */
+.card-container {
     display: flex;
     justify-content: center;
-  }
-  .card {
+}
+
+.card {
     width: 18rem;
     margin: 30px;
-  }
+}
 
-
-  /* POPUP */
-
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-  }
-  body{
-    width: 100%;
-    height: 100vh;
-    background: #e6e6e6;
-  }
-  ::selection{
-    background: #fee6eb;
-  }
-  
-  .container__ficha{
+/* Popup Container */
+.container__ficha {
     display: flex;
     max-width: 750px;
     background: #fff;
@@ -102,8 +101,9 @@
     justify-content: space-between;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
     position: relative;
-  }
-  .container__ficha::before{
+}
+
+.container__ficha::before {
     content: '';
     position: absolute;
     left: 0;
@@ -112,35 +112,43 @@
     width: 100%;
     border-radius: 12px;
     clip-path: circle(65% at right 35%);
-    background-image: linear-gradient( 135deg,  rgb(21, 2, 109) 10%, rgb(57, 41, 129) 100%);
-  }
-  .container__ficha .box.one{
+    background-image: linear-gradient(135deg, rgb(21, 2, 109) 10%, rgb(57, 41, 129) 100%);
+}
+
+/* Specific Popup Styles */
+.container__ficha .box.one {
     padding: 35px 5px 0px 35px;
-  }
-  .box.one .details .topic{
+}
+
+.box.one .details .topic {
     font-size: 30px;
     font-weight: 500;
-  }
-  .box.one .details ul{
+}
+
+.box.one .details ul {
     color: #737373;
     font-size: 13px;
     font-weight: 500;
-  }
-  .box.one .rating{
+}
+
+.box.one .rating {
     color: rgb(21, 2, 109);
     font-size: 14px;
     margin-top: 10px;
-  }
-  .box.one .price-box{
+}
+
+.box.one .price-box {
     margin-top: 16px;
-  }
-  .box.one .discount{
+}
+
+.box.one .discount {
     font-size: 20px;
     margin: 10px 0 0 12px;
     position: relative;
     color: #737373;
-  }
-  .box.one .discount:before{
+}
+
+.box.one .discount:before {
     content: '';
     position: absolute;
     height: 1px;
@@ -148,17 +156,20 @@
     background: #737373;
     top: 50%;
     left: -8px;
-  }
-  .box.one .price{
+}
+
+.box.one .price {
     color: rgb(21, 2, 109);
     font-size: 30px;
-  }
-  .box.one .button1{
+}
+
+.box.one .button1 {
     margin-top: 20px;
-  }
-  .box.one .button1 button{
+}
+
+.box.one .button1 button {
     outline: none;
-    border:none;
+    border: none;
     padding: 8px 16px;
     border-radius: 6px;
     font-size: 18px;
@@ -167,50 +178,60 @@
     background: rgb(21, 2, 109);
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  .button1 button:hover{
+}
+
+.button1 button:hover {
     transform: scale(0.98);
-  }
-  .container__ficha .box.two .image{
+}
+
+.container__ficha .box.two .image {
     position: relative;
     right: 0;
     top: 0;
     height: 340px;
     width: 430px;
-  }
-  .image img{
+}
+
+.image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-  }
-  .container__ficha .box.two .image-box{
+}
+
+.container__ficha .box.two .image-box {
     position: relative;
     text-align: right;
     right: 0;
     bottom: 27px;
-  }
-  .box.two .image-box .info{
+}
+
+.box.two .image-box .info {
     margin: 0 35px 0 0;
-  }
-  .box.two .info .brand{
-   font-size: 17px;
-   font-weight: 600;
-   color: #ffffff;
-  }
-  .box.two .info .name{
-   font-size: 20px;
-   font-weight: 500;
-   color: #fff;
-  }
-  .box.two .info .shipping{
-   font-size: 14px;
-   font-weight: 400;
-   color: #000;
-  }
-  .box.two .button2{
+}
+
+.box.two .info .brand {
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.box.two .info .name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.box.two .info .shipping {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.box.two .button2 {
     margin: 17px 0;
-  }
-  .button2 button{
+}
+
+.button2 button {
     outline: none;
     color: #fff;
     border: 1px solid #fff;
@@ -220,24 +241,23 @@
     font-size: 15px;
     font-weight: 400;
     cursor: pointer;
-  }
-  
-  .modal-custom {
-      max-width: 800px;
-      width: 90%;
-  }
+}
 
-  .modal-title{
+/* Modal Styles */
+.modal-custom {
+    max-width: 800px;
+    width: 90%;
+}
+
+.modal-title {
     color: rgb(21, 2, 109);
-  }
+}
 
-  .btn{
+.btn {
     background-color: rgb(21, 2, 109);
     border-color: rgb(21, 2, 109);
-  }
-   .topic{
+}
+
+.topic {
     color: rgb(21, 2, 109);
-   }
-
-
-  
+}
