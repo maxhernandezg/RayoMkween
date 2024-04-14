@@ -16,7 +16,22 @@
     padding: 1em 0;
     width: auto;
     height: auto;
+    color: white;
 }
+
+.footer-text {
+  font-size: 14px; /* Tamaño de fuente para los párrafos */
+}
+.footer-small {
+  font-size: 10px; /* Tamaño de fuente para el texto pequeño */
+  text-align: center;
+  margin-left: 50px;
+}
+
+.social-link  {
+  margin-right: 30px; /* Separación entre los iconos */
+}
+
   .mapa{
     outline: 3px solid rgb(88, 201, 216);
     margin-left: 1px ;
