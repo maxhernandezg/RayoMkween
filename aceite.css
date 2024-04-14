@@ -34,13 +34,14 @@
   width: auto;
   height: auto;
 }
-.mapa{
-  outline: 3px solid rgb(88, 201, 216);
-  margin-left: 1px ;
-  width: 200px;
-  height: 200px; 
+.footer-text {
+  font-size: 14px; /* Tamaño de fuente para los párrafos */
 }
-.iframe{
-  width: 100%;
-  height: 100%;
+.footer-small {
+  font-size: 10px; /* Tamaño de fuente para el texto pequeño */
+  text-align: center;
+  margin-left: 50px;
+}
+.social-link  {
+  margin-right: 30px; /* Separación entre los iconos */
 }
