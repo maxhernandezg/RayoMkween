@@ -138,3 +138,20 @@ body{
 .social-link  {
   margin-right: 30px;
 }
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    text-align: center;
+}
