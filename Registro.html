@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Taller RayoMakween</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <title>Taller RayoMakween</title>
 </head>
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-light colormenu">
         <div class="container-fluid">
-            <a class="navbar-brand texto-blanco" href="index.html"> <img src="https://i.ibb.co/SJjQ3tB/mechanic-logo-logotype-vector-15454239-removebg-preview.png" alt="" style="width: 10%;"> Taller Mecánico Rayo Makween</a>
+            <a class="navbar-brand active text-light" href="index.html"> <img src="https://i.ibb.co/SJjQ3tB/mechanic-logo-logotype-vector-15454239-removebg-preview.png" alt="" style="width: 10%;"> Taller Mecánico Rayo Makween</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,13 +24,13 @@
                         <a class="nav-link active text-light" href="iniciosesion.html">Iniciar Sesión</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link texto-blanco" href="#">Registrarse</a>
+                      <a class="nav-link active text-light" href="#">Registrarse</a>
                   </li>
                     <li class="nav-item">
-                        <a class="nav-link texto-blanco" href="formulario.html">Formulario de contacto</a>
+                        <a class="nav-link active text-light" href="formulario.html">Formulario de contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link texto-blanco" href="#">Carrito de compras</a>
+                        <a class="nav-link active text-light" href="#">Carrito de compras</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -39,23 +41,23 @@
         </div>
     </nav>
 
-<section class="bg-light py-3 py-md-5">
-    <div class="container">
-      <div class="row justify-content-md-center">
-        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-          <h2 class="mb-4 display-5 text-center">Registrato de Usuario</h2>
-          <p class="text-secondary mb-5 text-center">Por favor completar los datos</p>
-          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+    <section class="bg-light py-3 py-md-5">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+            <h2 class="mb-4 display-5 text-center">Registro de Usuario</h2>
+            <p class="text-secondary mb-5 text-center">Por favor completar los datos</p>
+            <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+          </div>
         </div>
       </div>
-    </div>
-  
-    <div class="container">
+    
+      <div class="container">
         <div class="row justify-content-lg-center">
           <div class="col-12 col-lg-9">
             <div class="bg-white border rounded shadow-sm overflow-hidden">
-      
-              <form action="#!">
+    
+              <form action="#" id="form">
                 <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                   <div class="col-12">
                     <label for="fullname" class="form-label">Nombre Completo <span class="text-danger">*</span></label>
@@ -82,6 +84,7 @@
                       </span>
                       <input type="tel" class="form-control" id="phone" name="phone" value="">
                     </div>
+                    <label id="phone-error" class="text-danger" style="display: none;">El número de teléfono solo debe contener dígitos numéricos.</label>
                   </div>
                   <div class="col-12">
                     <label for="password" class="form-label">Contraseña <span class="text-danger">*</span></label>
@@ -90,6 +93,7 @@
                   <div class="col-12">
                     <label for="confirm_password" class="form-label">Confirmar Contraseña <span class="text-danger">*</span></label>
                     <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                    <label id="password-error" class="text-danger" style="display: none;">Las contraseñas no coinciden</label>
                   </div>
                   <div class="col-12">
                     <div class="d-grid">
@@ -98,13 +102,12 @@
                   </div>
                 </div>
               </form>
-      
+    
             </div>
           </div>
         </div>
       </div>
-      
-  </section>
+    </section>
 
 </body>
 </html>
