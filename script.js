@@ -1,17 +1,22 @@
 function validarTelefono() {
     var telefono = $('#phone'); 
     var valorTelefono = telefono.val();
-
     var numeros = /^[0-9]+$/;
 
     if (!numeros.test(valorTelefono)) {
-        alert('El número de teléfono solo debe contener dígitos numéricos.');
+        $('#phone-error').css('display', 'block');
+        return false;
+    } else {
+        $('#phone-error').css('display', 'none');
+        return true;
     }
-}
+  }
 
-$(document).ready(function() {
-    $('#submitbtn').click(function() {
-        validarTelefono();
+  $(document).ready(function() {
+    $('#contactForm').submit(function(event) {
+        if (!validarTelefono()) {
+            event.preventDefault();
+        }
     });
-});
+  });
 
